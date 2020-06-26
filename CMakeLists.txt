@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.13)
+project(cmake_testapp)
+set(CMAKE_CXX_STANDARD 14)
+add_executable(req.cpp)
+add_subdirectory(cpr)
+include_directories(${CPR_INCLUDE_DIRS})
+target_link_libraries(your_target_name ${CPR_LIBRARIES})
